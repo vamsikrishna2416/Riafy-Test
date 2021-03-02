@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Node js Developer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+		<script src="public/js/jquery.min.js"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="public/config.js"></script>
+		<script src="public/script.js"></script>
+    </head>
+	
+	<style>
+		body  
+		{  
+			margin: 0;  
+			padding: 0;  
+			<!-- background-color:#6abadeba;   -->
+			font-family: 'Arial';  
+		}  
+		.login{  
+			width: 100%;
+			height: 560px; 
+			overflow: hidden;  
+			margin: auto;  
+			margin: 20 0 0 450px;  
+			padding:50px;  
+			background: #23463f;  
+			border-radius: 20px ;  
+			background-image:url("public/images/background.jpg");
+			margin-left: -14px; 
+		} 
+		
+		h2{  
+			text-align: center;  
+			color: #fff;  
+			padding: 20px;  
+		}  
+		label{  
+			color: #fff;  
+			font-size: 17px;  
+		}  
+		#Uname{  
+			width: 300px;  
+			height: 30px;  
+			border: none;  
+			border-radius: 3px;  
+			padding-left: 8px;  
+		}  
+		#Pass{  
+			width: 300px;  
+			height: 30px;  
+			border: none;  
+			border-radius: 3px;  
+			padding-left: 8px;  
+			  
+		}  
+		#log {
+			width: 300px;
+			height: 40px;
+			border: none;
+			border-radius: 25px;
+			padding-left: 7px;
+			color: #fff;
+			background: #01131d;
+		}
+		span{  
+			color: white;  
+			font-size: 17px;  
+		}  
+		<!-- a{   -->
+			<!-- float: right;   -->
+			<!-- background-color: grey;   -->
+		<!-- }  -->
+		#loginDivision{
+			    width: 100px;
+				margin-top: 50px;
+				margin-left: 50px;
+		}
+		.loginDivRow{
+			background: cadetblue;
+			border-radius: 20px;
+			margin-top: 120px;
+		}
+		
+	</style>
+	<body>
+		
+		<!-- login Page -->
+		<div class="row" id="loginPage">
+			<div class="col-sm-3" ></div>
+			
+			<div class="col-sm-6">
+				
+				
+				<div class="row loginDivRow">
+					
+					<div class="col-sm-7">
+						
+						<div class="login"></div>
+					</div>
+					<div class="col-sm-5">
+						<h2>Login Page</h2><br>
+						<div id="loginDivision"> 
+							
+							<label><b>User Name</b></label>    
+							<input type="text" name="Uname" id="Uname" placeholder="Username">    
+							<br><br>    
+							<label><b>Password</b></label>    
+							<input type="Password" name="Pass" id="Pass" placeholder="Password">    
+							<br><br><br>    
+							<input type="button" name="log" id="log" value="Login">       
+							<br><br>    
+							   
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="col-sm-3" ></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3" ></div>
+			
+			<div class="col-sm-6">
+				<div id="appView">
+			</div>
+			
+		</div>
+		<!-- login Page -->
+		
+		<script id="mainPage" type="text/x-jquery-tmpl">
+            <h1>Console</h1><br>
+		   
+		    <input type="text" id="searchCompanies" placeholder="Search Companies">
+		    <a id="searchClick">&emsp;<i class="fa fa-search" style="font-size:30px;color:cadetblue" aria-hidden="true"></i></a>
+		   
+			&emsp;
+		    <select>
+				<option value="select">Select</option>
+				<option value="MarketCap">Market Cap</option>
+				<option value="CurrentMarketPriceofstock">Current Market Price of stock</option>
+				<option value="StockP/E">Stock P/E</option>
+				<option value="DividendYield">Dividend Yield</option>
+				<option value="ROCE">ROCE</option>
+				<option value="ROE">ROE</option>
+				<option value="Debttoequity">Debt to equity</option>
+				<option value="EPS">EPS</option>
+				<option value="Reserves">Reserves</option>
+				<option value="Debt">10.Debt</option>
+		    </select>
+			<div id="divForCompaniesToDisplay">
+        </script>
+   </body>
+</html>
